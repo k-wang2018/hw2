@@ -1,0 +1,2 @@
+class FavoritePusheens < ApplicationRecord
+end
