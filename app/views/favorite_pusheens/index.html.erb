@@ -1,4 +1,6 @@
-<h1>This is a List of My Favorite Pusheens.</h1>
+<body style="background-color:powderblue;">
+
+<center><h1>Pusheens I Identify with the Most.</h1></center>
 
 <%= FavoritePusheens.all.inspect %>
 
@@ -8,23 +10,13 @@
 <ul>
   <% for favoritepusheens in FavoritePusheens.all %>
     <li>
-      <%= favoritepusheens.name %>
+      <p>
+      <hr>
+      <b><%= favoritepusheens.name %> </b>
+      <p>
+      <p>
+      <%=favoritepusheens.address %>
+      <div align = "right"> <img src ="<%=favoritepusheens.photo_url %>">
     </li>
 <% end %>
-</ul>
-
-<ul>
-  <% for favoritepusheens in FavoritePusheens.all %>
-    <li>
-      <%= favoritepusheens.address %>
-    </li>
-<% end %>
-</ul>
-
-<ul>
-  <% for favoritepusheens in FavoritePusheens.all %>
-    <li>
-      <img src ="<%=favoritepusheens.photo_url %>"
-    </li>
-  <% end %>
 </ul>
