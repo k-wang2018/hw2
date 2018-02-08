@@ -20,3 +20,11 @@
     </li>
 <% end %>
 </ul>
+
+<ul>
+  <% for favoritepusheens in FavoritePusheens.all %>
+    <li>
+      <img srv ="<%=favoritepusheens.photo_url %>"
+    </li>
+  <% end %>
+</ul>
