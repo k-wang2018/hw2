@@ -2,6 +2,9 @@
 
 <%= FavoritePusheens.all.inspect %>
 
+<p>
+<p>
+
 <ul>
   <% for favoritepusheens in FavoritePusheens.all %>
     <li>
@@ -13,7 +16,7 @@
 <ul>
   <% for favoritepusheens in FavoritePusheens.all %>
     <li>
-      <gif src="<%= favoritepusheens.photo_url %>">
+      <%= favoritepusheens.address %>
     </li>
 <% end %>
 </ul>
